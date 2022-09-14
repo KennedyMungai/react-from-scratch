@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
+
 
 const Employees = () => {
   return (
@@ -8,4 +10,4 @@ const Employees = () => {
   )
 }
 
-export default Employees
+export default Employees;
