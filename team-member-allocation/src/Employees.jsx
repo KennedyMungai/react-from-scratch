@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import maleProfile from './images/maleProfile.jpg'
+import femaleProfile from './images/femaleProfile.jpg'
 
 
 const Employees = () => {
