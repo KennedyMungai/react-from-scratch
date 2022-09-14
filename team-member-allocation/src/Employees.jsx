@@ -3,8 +3,7 @@ import { useState } from 'react';
 
 
 const Employees = () => {
-    const [employees, setEmployees] = useState([
-                                                {
+    const [employees, setEmployees] = useState([{
                                                     id: 1,
                                                     fullName: "Bob Jones",
                                                     designation: "JavaScript Developer",
