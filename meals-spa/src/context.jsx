@@ -6,7 +6,7 @@ const AppContext = React.createContext();
 const Context = ({ children }) => {
     
     return <AppContext.Provider value='hello'>
-
+        {children}
     </AppContext.Provider>
 }
 
