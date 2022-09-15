@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Teams = () => {
+const Teams = (selectedTeam, handleTeamSelectionChange) => {
   return (
         <select className='form-select form-select-lg' value={selectedTeam} onChange={handleTeamSelectionChange}>
             <option value="TeamA">TeamA</option>
