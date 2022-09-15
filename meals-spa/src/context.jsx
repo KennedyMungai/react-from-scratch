@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 
 
 const AppContext = React.createContext();
+const allMealsUrl = 'www.themealdb.com/api/json/v1/1/search.php?f=a';
 
 
 const AppProvider = ({ children }) => {
@@ -14,7 +15,7 @@ const AppProvider = ({ children }) => {
             console.log(error);
         }
     }
-    
+
     useEffect(() => {
 
         fetchData();
