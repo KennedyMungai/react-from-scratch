@@ -114,7 +114,6 @@ function App() {
           selectedTeam={selectedTeam}
           teamMemberCount={employees.filter((employees) => employees.teamName === selectedTeam).length}
         />
-      <Content />
       <Employees 
             employees={employees} 
             selectedTeam={selectedTeam} 
