@@ -121,17 +121,20 @@ function App() {
 
   return (
     <div>
-      <Header
-          selectedTeam={selectedTeam}
-          teamMemberCount={employees.filter((employees) => employees.teamName === selectedTeam).length}
-        />
-      <Employees 
-            employees={employees} 
-            selectedTeam={selectedTeam} 
-            handleEmployeeCardClick={handleEmployeeCardClick}
-            handleTeamSelectionChange={handleTeamSelectionChange}
+      <Router>
+        <Header
+            selectedTeam={selectedTeam}
+            teamMemberCount={employees.filter((employees) => employees.teamName === selectedTeam).length}
           />
-      <Footer />
+        <Employees 
+              employees={employees} 
+              selectedTeam={selectedTeam} 
+              handleEmployeeCardClick={handleEmployeeCardClick}
+              handleTeamSelectionChange={handleTeamSelectionChange}
+            />
+        <Footer />
+      </Router>
+      
     </div>
   );
 }
