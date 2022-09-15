@@ -108,6 +108,11 @@ function App() {
         setEmployees(transformedEmployees);
     };
 
+    useEffect(() => {
+      localStorage.setItem('employeeList', JSON.stringify(employees));
+    }, [employees])
+    
+
   return (
     <div>
       <Header
