@@ -93,6 +93,10 @@ const Employees = () => {
                                                 }
                                             ]);
 
+    function handleTeamSelectionChange(event) {
+        setSelectedTeam(event.target.value);
+    }
+
     return (
         <main className="container">
             <div className="row justify-content-center mt-3 mb-3">
