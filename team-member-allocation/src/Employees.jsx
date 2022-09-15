@@ -6,7 +6,7 @@ import femaleProfile from './images/femaleProfile.jpg'
 const Employees = ({employees, selectedTeam, handleEmployeeCardClick, handleTeamSelectionChange}) => {
     
     return (
-        <main className="container">
+        <main className="container mt-5">
             <div className="row justify-content-center mt-3 mb-3">
                 <div className="col-8">
                     <select className='form-select form-select-lg' value={selectedTeam} onChange={handleTeamSelectionChange}>
