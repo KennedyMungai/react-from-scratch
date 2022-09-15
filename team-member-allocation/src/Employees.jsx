@@ -92,7 +92,7 @@ const Employees = () => {
                                             ]);
 
     return (
-        <main>
+        <main className='container'>
             <h1>Employees</h1>
         </main>
     )
