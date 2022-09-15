@@ -1,6 +1,8 @@
 import React from 'react';
-import maleProfile from './images/maleProfile.jpg'
-import femaleProfile from './images/femaleProfile.jpg'
+import maleProfile from './images/maleProfile.jpg';
+import femaleProfile from './images/femaleProfile.jpg';
+import Teams from './Teams';
+
 
 
 const Employees = ({employees, selectedTeam, handleEmployeeCardClick, handleTeamSelectionChange}) => {
@@ -9,7 +11,7 @@ const Employees = ({employees, selectedTeam, handleEmployeeCardClick, handleTeam
         <main className="container mt-5">
             <div className="row justify-content-center mt-3 mb-3">
                 <div className="col-8">
-                    
+                    <Teams />
                 </div>
             </div>
 
