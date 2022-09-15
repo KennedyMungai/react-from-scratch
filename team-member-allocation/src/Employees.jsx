@@ -103,6 +103,9 @@ const Employees = () => {
                                     <h5 className="card-title">
                                         Full Name: {employee.fullName}
                                     </h5>
+                                    <p className="card-text">
+                                        Designation: {employee.designation}
+                                    </p>
                                 </div>
                             </div>
                         })
