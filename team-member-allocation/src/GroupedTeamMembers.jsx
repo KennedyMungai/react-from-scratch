@@ -10,25 +10,25 @@ const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
         var teams = [];
 
         var teamAMembers = employees.filter((employee) => employee.teamName === 'TeamA');
-        var teamA={team: 'TeamA', members: teamAMembers, collapsed: selectedTeam === 'TeamA' ? false: true};
+        var teamA={team: 'TeamA', members: teamAMembers, collapse: selectedTeam === 'TeamA' ? false: true};
         teams.push(teamA);
 
         var teamBMembers = employees.filter((employee) => employee.teamName === 'TeamB');
-        var teamB={team: 'TeamA', members: teamBMembers, collapsed: selectedTeam === 'TeamB' ? false: true};
+        var teamB={team: 'TeamA', members: teamBMembers, collapse: selectedTeam === 'TeamB' ? false: true};
         teams.push(teamB);
 
         var teamCMembers = employees.filter((employee) => employee.teamName === 'TeamC');
-        var teamC={team: 'TeamA', members: teamCMembers, collapsed: selectedTeam === 'TeamC' ? false: true};
+        var teamC={team: 'TeamA', members: teamCMembers, collapse: selectedTeam === 'TeamC' ? false: true};
         teams.push(teamC);
 
         var teamDMembers = employees.filter((employee) => employee.teamName === 'TeamD');
-        var teamD={team: 'TeamA', members: teamDMembers, collapsed: selectedTeam === 'TeamD' ? false: true};
+        var teamD={team: 'TeamA', members: teamDMembers, collapse: selectedTeam === 'TeamD' ? false: true};
         teams.push(teamD);
     };
 
     const handleTeamClick = (event) => {
         var transformedGroupData = groupedEmployees.map((groupedData) => groupedData.team === event.currentTarget.id 
-                                        ? {...groupedData, collapsed: !groupedData.collapsed}
+                                        ? {...groupedData, collapse: !groupedData.collapse}
                                         : groupedData);
 
         setGroupedEmployees(transformedGroupData);
@@ -44,7 +44,7 @@ const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
                             <h4 id={item.team} className="card-header text-secondary bg-white" onClick={handleTeamClick}>
                                 Team Name: {item.team}
                             </h4>
-                            <div id={"collapse_"+item.team} className={item.collapsed === true?"collapsed":""}>
+                            <div id={"collapse_"+item.team} className={item.collapse === true?"collapse":""}>
                                 <hr />
                                 {
                                     item.members.map(member => {
