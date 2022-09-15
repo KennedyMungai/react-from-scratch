@@ -112,7 +112,12 @@ function App() {
     <div>
       <Header />
       <Content />
-      <Employees />
+      <Employees 
+            employees={employees} 
+            selectedTeam={selectedTeam} 
+            handleEmployeeCardClick={handleEmployeeCardClick}
+            handleTeamSelectionChange={handleEmployeeCardClick}
+          />
       <Footer />
     </div>
   );
