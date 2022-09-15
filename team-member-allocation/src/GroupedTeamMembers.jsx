@@ -26,6 +26,10 @@ const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
         teams.push(teamD);
     };
 
+    const handleTeamClick = () => {
+
+    };
+
     return (
         <main className="container">
             {
