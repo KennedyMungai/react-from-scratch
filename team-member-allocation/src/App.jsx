@@ -147,6 +147,9 @@ function App() {
               >
 
             </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
           </Routes>
         <Footer />
       </Router>
