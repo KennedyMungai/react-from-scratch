@@ -124,6 +124,7 @@ function App() {
   return (
     <div>
       <Router>
+        <Nav />
         <Header
             selectedTeam={selectedTeam}
             teamMemberCount={employees.filter((employees) => employees.teamName === selectedTeam).length}
