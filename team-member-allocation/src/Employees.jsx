@@ -95,6 +95,17 @@ const Employees = () => {
         <main className="container">
             <div className="row justify-content-center mt-3 mb-3">
                 <div className="col-8">
+                    <select>
+                        <option>TeamA</option>
+                        <option>TeamB</option>
+                        <option>TeamC</option>
+                        <option>TeamD</option>
+                    </select>
+                </div>
+            </div>
+
+            <div className="row justify-content-center mt-3 mb-3">
+                <div className="col-8">
                     <div className="card-collection">
                         {
                             employees.map((employee) => {
