@@ -123,7 +123,7 @@ const Employees = () => {
                     <div className="card-collection">
                         {
                             employees.map((employee) => {
-                                <div className="card m-2" id={employee.id} style={{cursor:"pointer"}} onClick={handleEmployeeCardClick} >
+                                <div className={(employee.teamName === selectedTeam ? 'card m-2 standount':'card m-2')} id={employee.id} style={{cursor:"pointer"}} onClick={handleEmployeeCardClick} >
                                     {(employee.gender === 'male')?<img src={femaleProfile} alt="Profile" className="card-img-top" /> : <img src={maleProfile} alt="Profile" className="card-img-top" />}
 
                                     <div className="card-body">
