@@ -127,12 +127,14 @@ function App() {
             teamMemberCount={employees.filter((employees) => employees.teamName === selectedTeam).length}
           />
           <Routes>
-            <Employees 
-                  employees={employees} 
-                  selectedTeam={selectedTeam} 
-                  handleEmployeeCardClick={handleEmployeeCardClick}
-                  handleTeamSelectionChange={handleTeamSelectionChange}
-                />
+            <Route path="/">
+              <Employees 
+                    employees={employees} 
+                    selectedTeam={selectedTeam} 
+                    handleEmployeeCardClick={handleEmployeeCardClick}
+                    handleTeamSelectionChange={handleTeamSelectionChange}
+                  />
+            </Route>
           </Routes>
         <Footer />
       </Router>
