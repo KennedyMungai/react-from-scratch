@@ -6,7 +6,7 @@ import femaleProfile from './images/femaleProfile.jpg'
 
 const Employees = () => {
     const [selectedTeam, setSelectedTeam] = useState("TeamB");
-    
+
     const [employees, setEmployees] = useState([{
                                                     id: 1,
                                                     fullName: "Bob Jones",
@@ -97,7 +97,7 @@ const Employees = () => {
         <main className="container">
             <div className="row justify-content-center mt-3 mb-3">
                 <div className="col-8">
-                    <select className='form-select form-select-lg'>
+                    <select className='form-select form-select-lg' value={selectedTeam}>
                         <option value="TeamA">TeamA</option>
                         <option value="TeamB">TeamB</option>
                         <option value="TeamC">TeamC</option>
