@@ -92,13 +92,13 @@ const Employees = () => {
                                             ]);
 
     return (
-        <main className='container'>
+        <main className="container">
             <div className="row justify-content-center mt-3">
                 <div className="col-8">
                     {
                         employees.map((employee) => {
                             <div className="card" id={employee.id}>
-                                <img src={femaleProfile} alt="Profile" className='card-img-top' />
+                                <img src={femaleProfile} alt="Profile" className="card-img-top" />
                                 <div className="card-body">
                                     <h5 className="card-title">
                                         Full Name: {employee.fullName}
