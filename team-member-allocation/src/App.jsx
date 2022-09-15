@@ -5,6 +5,7 @@ import Content from './Content';
 import Employees from './Employees';
 import Footer from './Footer';
 import Header from './Header';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
