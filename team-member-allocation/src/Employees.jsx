@@ -98,6 +98,10 @@ const Employees = () => {
         setSelectedTeam(event.target.value);
     }
 
+    const handleEmployeeCardClick = () => {
+        
+    };
+
     return (
         <main className="container">
             <div className="row justify-content-center mt-3 mb-3">
