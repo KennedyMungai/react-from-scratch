@@ -5,6 +5,8 @@ import femaleProfile from './images/femaleProfile.jpg'
 
 
 const Employees = () => {
+    const [selectedTeam, setSelectedTeam] = useState("TeamB");
+    
     const [employees, setEmployees] = useState([{
                                                     id: 1,
                                                     fullName: "Bob Jones",
