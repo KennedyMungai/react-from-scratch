@@ -15,6 +15,8 @@ const AppProvider = ({ children }) => {
             }
         }
 
+        fetchData();
+
     }, []);
     
     
