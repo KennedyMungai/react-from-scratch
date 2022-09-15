@@ -6,6 +6,10 @@ import { useState } from 'react';
 const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
     const [groupedEmployees, setGroupedEmployees] = useState(groupTeamMembers());
 
+    const groupTeamMembers = () => {
+        
+    };
+
     return (
         <main className="container">
             <div className="row justify-content-center mt-3 mb-4">
