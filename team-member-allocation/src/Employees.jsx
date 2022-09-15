@@ -96,10 +96,10 @@ const Employees = () => {
             <div className="row justify-content-center mt-3 mb-3">
                 <div className="col-8">
                     <select>
-                        <option>TeamA</option>
-                        <option>TeamB</option>
-                        <option>TeamC</option>
-                        <option>TeamD</option>
+                        <option value="TeamA">TeamA</option>
+                        <option value="TeamB">TeamB</option>
+                        <option value="TeamC">TeamC</option>
+                        <option value="TeamD">TeamD</option>
                     </select>
                 </div>
             </div>
