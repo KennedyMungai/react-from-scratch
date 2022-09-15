@@ -99,6 +99,11 @@ const Employees = () => {
                         employees.map((employee) => {
                             <div className="card" id={employee.id}>
                                 <img src={femaleProfile} alt="Profile" className='card-img-top' />
+                                <div className="card-body">
+                                    <h5 className="card-title">
+                                        Full Name: {employee.fullName}
+                                    </h5>
+                                </div>
                             </div>
                         })
                     }
