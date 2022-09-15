@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 
-const AppContext = React.createContext();
+const AppProvider = React.createContext();
 
 const Context = ({ children }) => {
     
@@ -10,4 +10,4 @@ const Context = ({ children }) => {
     </AppContext.Provider>
 }
 
-export default Context;
+export { AppContext, AppProvider }
