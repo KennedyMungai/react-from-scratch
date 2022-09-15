@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({selectedTeam, teamMemberCount}) => {
   return (
     <header>
         <h1>Header</h1>
