@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Header = ({selectedTeam, teamMemberCount}) => {
   return (
@@ -9,4 +9,4 @@ const Header = ({selectedTeam, teamMemberCount}) => {
   )
 }
 
-export default Header
+export default Header;
