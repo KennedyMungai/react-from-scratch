@@ -7,7 +7,7 @@ import Footer from './Footer';
 import Header from './Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GroupedTeamMembers from './GroupedTeamMembers';
-
+import Nav from './Nav';
 
 
 function App() {
