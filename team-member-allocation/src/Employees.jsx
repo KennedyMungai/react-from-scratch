@@ -101,6 +101,8 @@ const Employees = () => {
         const transformedEmployees = employees.map((employee) => employee.id === parseInt(event.currentTarget.id)
                                 ?((employee.teamName === selectedTeam)?{...employee, teamName: ''}:{...employee,teamName: selectedTeam})
                                 :employee);
+
+        setEmployees(transformedEmployees);
     };
 
     return (
