@@ -13,7 +13,7 @@ import NotFound from './NotFound';
 
 
 function App() {
-    const [selectedTeam, setSelectedTeam] = useState(JSON.parse(localStorage.getItem('selectedItem')) || "TeamB");
+    const [selectedTeam, setTeam] = useState(JSON.parse(localStorage.getItem('selectedItem')) || "TeamB");
     const [employees, setEmployees] = useState(JSON.parse(localStorage.getItem('employeeList')) || [{
                                                     id: 1,
                                                     fullName: "Bob Jones",
@@ -101,7 +101,7 @@ function App() {
                                             ]);
 
     function handleTeamSelectionChange(event) {
-        setSelectedTeam(event.target.value);
+        setTeam(event.target.value);
     }
 
     const handleEmployeeCardClick = (event) => {
