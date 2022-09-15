@@ -11,7 +11,7 @@ const Employees = ({employees, selectedTeam, handleEmployeeCardClick, handleTeam
         <main className="container mt-5">
             <div className="row justify-content-center mt-3 mb-3">
                 <div className="col-8">
-                    <Teams />
+                    <Teams selectedTeam={selectedTeam} handleTeamSelectionChange={handleTeamSelectionChange} />
                 </div>
             </div>
 
