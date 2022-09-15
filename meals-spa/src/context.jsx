@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 
 
+const AppContext = React.createContext();
+
 const Context = () => {
-    const AppContext = React.createContext();
     
     return (
         <div>Context</div>
