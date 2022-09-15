@@ -8,7 +8,7 @@ import Header from './Header';
 
 
 function App() {
-  const [selectedTeam, setSelectedTeam] = useState("TeamB");
+  const [selectedTeam, setSelectedTeam] = useState(JSON.parse(localStorage.getItem('selectedItem')) || "TeamB");
 
     const [employees, setEmployees] = useState([{
                                                     id: 1,
