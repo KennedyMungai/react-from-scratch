@@ -5,9 +5,9 @@ const AppContext = React.createContext();
 
 const Context = ({ children }) => {
     
-    return (
-        <div>Context</div>
-    )
+    return <AppContext.Provider value='hello'>
+
+    </AppContext.Provider>
 }
 
 export default Context;
