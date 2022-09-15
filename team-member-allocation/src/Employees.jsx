@@ -93,7 +93,15 @@ const Employees = () => {
 
     return (
         <main className='container'>
-            <h1>Employees</h1>
+            <div className="row">
+                <div className="col-8">
+                    {
+                        employees.map((employee) => {
+
+                        })
+                    }
+                </div>
+            </div>
         </main>
     )
 }
