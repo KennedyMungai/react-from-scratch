@@ -10,7 +10,7 @@ import Header from './Header';
 function App() {
   const [selectedTeam, setSelectedTeam] = useState(JSON.parse(localStorage.getItem('selectedItem')) || "TeamB");
 
-    const [employees, setEmployees] = useState([{
+    const [employees, setEmployees] = useState(JSON.parse(localStorage.getItem('employeeList')) || [{
                                                     id: 1,
                                                     fullName: "Bob Jones",
                                                     designation: "JavaScript Developer",
