@@ -1,6 +1,5 @@
 import React from 'react';
-import maleProfile from './images/maleProfile.jpg';
-import femaleProfile from './images/femaleProfile.jpg';
+import TeamMembers from './TeamMembers';
 import Teams from './Teams';
 
 
@@ -20,18 +19,7 @@ const Employees = ({employees, selectedTeam, handleEmployeeCardClick, handleTeam
                     <div className="card-collection">
                         {
                             employees.map((employee) => {
-                                <div key={employee.id} className={(employee.teamName === selectedTeam ? 'card m-2 standount':'card m-2')} id={employee.id} style={{cursor:"pointer"}} onClick={handleEmployeeCardClick} >
-                                    {(employee.gender === 'male')?<img src={femaleProfile} alt="Profile" className="card-img-top" /> : <img src={maleProfile} alt="Profile" className="card-img-top" />}
-
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            Full Name: {employee.fullName}
-                                        </h5>
-                                        <p className="card-text">
-                                            Designation: {employee.designation}
-                                        </p>
-                                    </div>
-                                </div>
+                                <TeamMembers employee={employee} handleEmployeeCardClick={handleEmployeeCardClick} selectedTeam={selectedTeam} />
                             })
                         }
                     </div>
