@@ -97,7 +97,7 @@ const Employees = () => {
         <main className="container">
             <div className="row justify-content-center mt-3 mb-3">
                 <div className="col-8">
-                    <select className='form-select form-select-lg' value={selectedTeam}>
+                    <select className='form-select form-select-lg' value={selectedTeam} onChange={handleTeamSelectionChange}>
                         <option value="TeamA">TeamA</option>
                         <option value="TeamB">TeamB</option>
                         <option value="TeamC">TeamC</option>
