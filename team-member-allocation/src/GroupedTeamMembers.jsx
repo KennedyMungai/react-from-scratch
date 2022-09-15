@@ -32,7 +32,7 @@ const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
                 groupedEmployees.map((item) => {
                     return (
                         <div key={item.team} className="card mt-2" style={{cursor: "pointer"}}>
-                            <h4 id={item.team} className="card-header text-secondary bg-white">
+                            <h4 id={item.team} className="card-header text-secondary bg-white" onClick={handleTeamClick}>
                                 Team Name: {item.team}
                             </h4>
                             <div id={"collapse_"+item.team} className={item.collapsed === true?"collapsed":""}>
