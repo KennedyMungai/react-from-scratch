@@ -34,7 +34,7 @@ const AppProvider = ({ children }) => {
         fetchMeals(randomMealUrl);
     };
 
-    const selectMeal = (idMeal, favoutiteMeal) => {
+    const selectMeal = (idMeal, favouriteMeal) => {
         console.log("Called the select meal function");
 
         let meal;
