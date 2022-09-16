@@ -29,7 +29,7 @@ const AppProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        fetchMeals(allMealsUrl);
+        fetchMeals(`${allMealsUrl}${searchTerm}`);
     }, []);
     
     
