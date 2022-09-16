@@ -3,7 +3,7 @@ import { useGlobalContext } from '../context';
 
 
 const Meals = () => {
-  const context = useGlobalContext();
+  const { meals } = useGlobalContext();
 
   return (
     <div>Meals</div>
