@@ -24,7 +24,7 @@ const Search = () => {
       <form onSubmit={handleSubmit}>
         <input type='text' placeholder='Search Favourite Meal' className='form-input' value={text} onChange={handleChange} />
         <button type="submit" className='btn'>Search</button>
-        <button type="button" className='btn btn-hipster'>Surprise Me!</button>
+        <button type="button" className='btn btn-hipster' onClick={fetchRandomMeal}>Surprise Me!</button>
       </form>
     </header>
   )
