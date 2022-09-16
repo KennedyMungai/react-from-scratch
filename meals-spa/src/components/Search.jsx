@@ -3,6 +3,8 @@ import { useGlobalContext } from '../context';
 
 
 const Search = () => {
+  const [text, setText] = useState('');
+
   return (
     <header className='search-container'>
       <form>
