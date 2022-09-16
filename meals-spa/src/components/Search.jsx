@@ -4,7 +4,7 @@ import { useGlobalContext } from '../context';
 
 const Search = () => {
   return (
-    <header>Search</header>
+    <header className='search-container'>Search</header>
   )
 }
 
