@@ -13,7 +13,7 @@ const AppProvider = ({ children }) => {
             const {data} = await axios('https://randomuser.me/api/');
             console.log(data);
         } catch (error) {
-            console.log(error);
+            console.log(error.response);
         }
     }
 
