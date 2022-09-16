@@ -11,7 +11,7 @@ const Meals = () => {
         const {idMeal, strMeal: title, strMealThumb:image} = singleMeal;
 
         return <article className='singleMeal' key={idMeal}>
-          <img src={image} className="img" style={{width: '200px'}} />
+          <img src={image} className="img" />
           <footer>
             <h5>{title}</h5>
             <button className='like-btn'>Click Me</button>
