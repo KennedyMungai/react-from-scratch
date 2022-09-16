@@ -4,7 +4,11 @@ import { useGlobalContext } from '../context';
 
 const Search = () => {
   return (
-    <header className='search-container'>Search</header>
+    <header className='search-container'>
+      <form>
+        <input type='text' placeholder='Search Favourite Meal' className='form-input' />
+      </form>
+    </header>
   )
 }
 
