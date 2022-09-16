@@ -12,7 +12,7 @@ const AppProvider = ({ children }) => {
 
     const fetchMeals= async (url) => {
         try {
-            const {data} = await axios('https://randomuser.me/api/');
+            const {data} = await axios(url);
             console.log(data);
         } catch (error) {
             console.log(error.response);
