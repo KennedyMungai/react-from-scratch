@@ -17,6 +17,7 @@ const Stocklist = () => {
                     }
                 });
                 console.log(response);
+                setStock(response.data);
             } catch (err) {
                 console.log(err.message);
             }
