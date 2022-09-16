@@ -43,6 +43,10 @@ const AppProvider = ({ children }) => {
         setShowModal(true);
     };
 
+    const closeModal = () => {
+        setShowModal(false);
+    };
+
     useEffect(() => {
         fetchMeals(allMealsUrl);
     }, []);
