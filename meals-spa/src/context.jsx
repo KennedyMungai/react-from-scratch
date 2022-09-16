@@ -38,6 +38,7 @@ const AppProvider = ({ children }) => {
         let meal;
         meal = meals.find((meal) => meal.idMeal === idMeal);
         setSelectedMeal(meal);
+        setShowModal(true);
     };
 
     useEffect(() => {
