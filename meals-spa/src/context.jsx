@@ -37,6 +37,7 @@ const AppProvider = ({ children }) => {
     const selectMeal = (idMeal, favoutiteMeal) => {
         let meal;
         meal = meals.find((meal) => meal.idMeal === idMeal);
+        setSelectedMeal(meal);
     };
 
     useEffect(() => {
