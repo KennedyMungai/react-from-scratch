@@ -8,6 +8,8 @@ const randomMealUrl = 'www.themealdb.com/api/json/v1/1/random.php';
 
 
 const AppProvider = ({ children }) => {
+    const [meals, setMeals] = useState([]);
+
     const fetchMeals= async (url) => {
         try {
             const {data} = await axios('https://randomuser.me/api/');
