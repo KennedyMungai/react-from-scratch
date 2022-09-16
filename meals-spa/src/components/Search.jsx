@@ -5,7 +5,7 @@ import { useGlobalContext } from '../context';
 const Search = () => {
   const [text, setText] = useState('');
 
-  const { setSearchTerm } = useGlobalContext();
+  const { setSearchTerm, fetchRandomMeal } = useGlobalContext();
 
   const handleChange = (e) => {
     setText(e.target.value);
