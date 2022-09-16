@@ -35,6 +35,8 @@ const AppProvider = ({ children }) => {
     };
 
     const selectMeal = (idMeal, favoutiteMeal) => {
+        console.log("Called the select meal function");
+
         let meal;
         meal = meals.find((meal) => meal.idMeal === idMeal);
         setSelectedMeal(meal);
