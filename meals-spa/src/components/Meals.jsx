@@ -6,7 +6,12 @@ const Meals = () => {
   const { meals } = useGlobalContext();
 
   return (
-    <div>Meals</div>
+    <section>
+      {meals.map((singleMeal) => {
+        console.log(singleMeal);
+        return <h4>Single Meal</h4>
+      })}
+    </section>
   )
 }
 
