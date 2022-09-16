@@ -7,7 +7,7 @@ import { useGlobalContext } from './context';
 
 
 function App() {
-  const { showModal } = useGlobalContext();
+  const { showModal, Favourites } = useGlobalContext();
 
   return (
     <main>
