@@ -9,7 +9,7 @@ const Modal = () => {
   return (
     <aside className='modal-overlay'>
       <div className="modal-container">
-        <h1>Modal Container</h1>
+        <h1>{selectedMeal.strMeal}</h1>
         <button onClick={closeModal}>close</button>
       </div>
     </aside>
