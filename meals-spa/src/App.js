@@ -7,6 +7,8 @@ import { useGlobalContext } from './context';
 
 
 function App() {
+  const { showModal } = useGlobalContext();
+
   return (
     <main>
       <Search />
