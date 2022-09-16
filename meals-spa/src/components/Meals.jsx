@@ -8,7 +8,6 @@ const Meals = () => {
   return (
     <section>
       {meals.map((singleMeal) => {
-        console.log(singleMeal);
         return <h4>Single Meal</h4>
       })}
     </section>
