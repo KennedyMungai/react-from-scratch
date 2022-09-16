@@ -15,7 +15,7 @@ const Search = () => {
 
   return (
     <header className='search-container'>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input type='text' placeholder='Search Favourite Meal' className='form-input' />
         <button type="submit" className='btn'>Search</button>
         <button type="button" className='btn btn-hipster'>Surprise Me!</button>
