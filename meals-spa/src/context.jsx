@@ -47,12 +47,13 @@ const AppProvider = ({ children }) => {
     };
 
     const addToFavourites = (idMeal) => {
-        const meal = meals.find((meal) => meal.idMeal === idMeal);
         const alreadyFavourite = favourites.find((meal) => meal.idMeal === idMeal);
-
+        
         if(alreadyFavourite) {
             return;
         }
+        
+        const meal = meals.find((meal) => meal.idMeal === idMeal);
          const updatedFavourites=[...favourites, meal];
          setFavourites(updatedFavourites);
     };
