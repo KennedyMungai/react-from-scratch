@@ -6,6 +6,7 @@ const Stocklist = () => {
     const [watchList, setWatchList] = useState([
         "GOOGL", "MSFT", "AMZN"
     ]);
+    const [stock, setStock] = useState();
 
     useEffect(() => {
         const fetchData = async () => {
