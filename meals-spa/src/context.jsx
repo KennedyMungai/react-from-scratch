@@ -14,7 +14,6 @@ const AppProvider = ({ children }) => {
         try {
             const {data} = await axios(url);
             setMeals(data.meals);
-            console.log(data);
         } catch (error) {
             console.log(error.response);
         }
