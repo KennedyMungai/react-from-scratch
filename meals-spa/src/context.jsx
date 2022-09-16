@@ -18,9 +18,7 @@ const AppProvider = ({ children }) => {
     }
 
     useEffect(() => {
-
         fetchMeals(allMealsUrl);
-
     }, []);
     
     
