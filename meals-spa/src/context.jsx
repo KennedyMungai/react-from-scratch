@@ -46,6 +46,21 @@ const AppProvider = ({ children }) => {
         setShowModal(false);
     };
 
+    const addToFavourites = (idMeal) => {
+        const meal = meals.find((meal) => meal.idMeal === idMeal);
+        const alreadyFavourite = favourites.find((meal) => meal.idMeal === idMeal);
+
+        if(alreadyFavourite) {
+            return;
+        }
+         const updatedFavourites=[...favourites, meal];
+         setFavourites(updatedFavourites);
+    };
+
+    const removeFromFavourites = (idMeal) => {
+
+    };
+
     useEffect(() => {
         fetchMeals(allMealsUrl);
     }, []);
