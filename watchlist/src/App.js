@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <routes>
-          <route path='/' elememt={}>
+          <route path='/' elememt={<StockOverviewPage />}>
 
           </route>
         </routes>
