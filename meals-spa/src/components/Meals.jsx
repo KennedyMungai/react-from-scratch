@@ -4,7 +4,7 @@ import { BsHandThumbsUp } from 'react-icons/bs';
 
 
 const Meals = () => {
-  const { meals } = useGlobalContext();
+  const { meals, loading } = useGlobalContext();
 
   return (
     <section className='section-center'>
