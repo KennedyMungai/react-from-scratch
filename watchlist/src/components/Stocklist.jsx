@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 
 const Stocklist = () => {
     const [watchList, setWatchList] = useState([
-        "GOOGL", "MSFT", "AMZ"
+        "GOOGL", "MSFT", "AMZN"
     ]);
 
   return (
