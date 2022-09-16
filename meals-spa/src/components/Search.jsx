@@ -7,7 +7,8 @@ const Search = () => {
     <header className='search-container'>
       <form>
         <input type='text' placeholder='Search Favourite Meal' className='form-input' />
-        <button type="submit">Search</button>
+        <button type="submit" className='btn'>Search</button>
+        <button type="button" className='btn btn-hipster'>Surprise Me!</button>
       </form>
     </header>
   )
