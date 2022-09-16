@@ -37,7 +37,7 @@ const AppProvider = ({ children }) => {
     }, [searchTerm]);
     
     
-    return <AppContext.Provider value={{loading, meals, setSearchTerm}}>
+    return <AppContext.Provider value={{loading, meals, setSearchTerm, fetchRandomMeal}}>
         {children}
     </AppContext.Provider>
 }
