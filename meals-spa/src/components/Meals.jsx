@@ -15,7 +15,7 @@ const Meals = () => {
           <img src={image} className="img" />
           <footer>
             <h5>{title}</h5>
-            <button className='like-btn'>Click Me</button>
+            <button className='like-btn'><BsHandThumbsUp /></button>
           </footer>
         </article>
       })}
