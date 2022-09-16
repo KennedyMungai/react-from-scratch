@@ -61,11 +61,13 @@ const AppProvider = ({ children }) => {
         const meal = meals.find((meal) => meal.idMeal === idMeal);
          const updatedFavourites=[...favourites, meal];
          setFavourites(updatedFavourites);
+         localStorage.setItem("favourites", JSON.stringify(updatedFavourites));
     };
 
     const removeFromFavourites = (idMeal) => {
         const updatedFavourites = favourites.filter((meal) => meal.idMeal !== idMeal);
         setFavourites(updatedFavourites);
+        localStorage.setItem("favourites", JSON.stringify(updatedFavourites));
     };
 
     useEffect(() => {
