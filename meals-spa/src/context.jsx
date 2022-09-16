@@ -12,6 +12,7 @@ const AppProvider = ({ children }) => {
     const [loading, setLoading] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
     const [showModal, setShowModal] = useState(false);
+    const [selectedMeal, setSelectedMeal] = useState(null);
 
     const fetchMeals= async (url) => {
         setLoading(true);
