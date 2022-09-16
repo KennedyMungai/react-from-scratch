@@ -13,7 +13,7 @@ const AppProvider = ({ children }) => {
     const [searchTerm, setSearchTerm] = useState('');
     const [showModal, setShowModal] = useState(false);
     const [selectedMeal, setSelectedMeal] = useState(null);
-    const [favourites, setFavourites] = useState([]);
+    const [favourites, setFavourites] = useState(getFavouritesFromLocalStorage());
 
     const fetchMeals= async (url) => {
         setLoading(true);
