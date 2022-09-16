@@ -12,7 +12,7 @@ function App() {
   return (
     <main>
       <Search />
-      {/* <Favourites /> */}
+      <Favourites />
       <Meals />
       {showModal && <Modal />}
     </main>
