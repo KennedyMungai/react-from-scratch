@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useGlobalContext } from '../context';
+import { BsHandThumbsUp } from 'react-icons/bs';
 
 
 const Meals = () => {
