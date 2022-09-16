@@ -34,6 +34,11 @@ const AppProvider = ({ children }) => {
         fetchMeals(randomMealUrl);
     };
 
+    const selectMeal = (idMeal, favoutiteMeal) => {
+        let meal;
+        meal = meals.find((meal) => meal.idMeal === idMeal);
+    };
+
     useEffect(() => {
         fetchMeals(allMealsUrl);
     }, []);
