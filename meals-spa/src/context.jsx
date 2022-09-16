@@ -25,7 +25,7 @@ const AppProvider = ({ children }) => {
     }, []);
     
     
-    return <AppContext.Provider value={{name: 'john', role: 'student'}}>
+    return <AppContext.Provider value={{meals}}>
         {children}
     </AppContext.Provider>
 }
