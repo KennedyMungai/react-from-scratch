@@ -5,6 +5,10 @@ import { useGlobalContext } from '../context';
 const Search = () => {
   const [text, setText] = useState('');
 
+  const handleSubmit = (e) => {
+    setText(e.target.value);
+  }
+
   return (
     <header className='search-container'>
       <form>
