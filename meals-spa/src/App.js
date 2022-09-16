@@ -7,12 +7,12 @@ import { useGlobalContext } from './context';
 
 
 function App() {
-  const { showModal, Favourites } = useGlobalContext();
+  const { showModal, favourites } = useGlobalContext();
 
   return (
     <main>
       <Search />
-      <Favourites />
+      {favourites.length > 0 && <Favourites />}
       <Meals />
       {showModal && <Modal />}
     </main>
