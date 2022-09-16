@@ -10,6 +10,7 @@ const randomMealUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
 const AppProvider = ({ children }) => {
     const [meals, setMeals] = useState([]);
     const [loading, setLoading] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
 
     const fetchMeals= async (url) => {
         setLoading(true);
