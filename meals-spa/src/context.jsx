@@ -8,11 +8,10 @@ const randomMealUrl = 'www.themealdb.com/api/json/v1/1/random.php';
 
 
 const AppProvider = ({ children }) => {
-    const fetchData = async () => {
+    const fetchMeals= async (url) => {
         try {
-            const response = await fetch('https://randomuser.me/api/');
-            const data = await response.json();
-            console.log(data);
+            const response = await axios('https://randomuser.me/api/');
+            console.log(response);
         } catch (error) {
             console.log(error);
         }
@@ -20,7 +19,7 @@ const AppProvider = ({ children }) => {
 
     useEffect(() => {
 
-        fetchData();
+        fetchMeals(allMealsUrl);
 
     }, []);
     
