@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter, route, routes} from 'react-router-dom';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import StockDetailPage from './pages/StockDetailPage';
 import StockOverviewPage from './pages/StockOverviewPage';
 
@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <routes>
-          <route path='/' elememt={<StockOverviewPage />}>
+        <Routes>
+          <Route path='/' element={<StockOverviewPage />}>
 
-          </route>
-        </routes>
+          </Route>
+        </Routes>
       </BrowserRouter>
     </div>
   );
