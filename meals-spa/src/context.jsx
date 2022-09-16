@@ -52,7 +52,7 @@ const AppProvider = ({ children }) => {
         if(alreadyFavourite) {
             return;
         }
-        
+
         const meal = meals.find((meal) => meal.idMeal === idMeal);
          const updatedFavourites=[...favourites, meal];
          setFavourites(updatedFavourites);
@@ -86,7 +86,8 @@ const AppProvider = ({ children }) => {
                                             selectedMeal,
                                             closeModal,
                                             addToFavourites,
-                                            removeFromFavourites
+                                            removeFromFavourites,
+                                            favourites
                                         }
                                         }>
         {children}
