@@ -7,7 +7,19 @@ const Stocklist = () => {
         "GOOGL", "MSFT", "AMZN"
     ]);
 
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await finnHub.get("/quote?symbol=MSFT&token=cci686aad3ibcn4bhn2g");
+                console.log(response);
+            } catch (err) {
+                
+            }
 
+            fetchData();
+        }
+    }, []);
+    
 
   return (
     <div>Stocklist</div>
