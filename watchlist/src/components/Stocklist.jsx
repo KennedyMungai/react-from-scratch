@@ -9,6 +9,8 @@ const Stocklist = () => {
     const [stock, setStock] = useState();
 
     useEffect(() => {
+        let isMounted = true;
+
         const fetchData = async () => {
             try {
                 const response = await finnHub.get("/quote", {
@@ -17,13 +19,19 @@ const Stocklist = () => {
                     }
                 });
                 console.log(response);
-                setStock(response.data);
+
+                if(isMounted)
+                {
+                    setStock(response.data);
+                }
             } catch (err) {
                 console.log(err.message);
             }
         }
 
         fetchData();
+
+        return () => (isMounted = false);
     }, []);
     
 
