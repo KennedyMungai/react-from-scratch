@@ -10,7 +10,7 @@ const Modal = () => {
     <aside className='modal-overlay'>
       <div className="modal-container">
         <h1>Modal Container</h1>
-        <button onClick={closeModal()}>close</button>
+        <button onClick={closeModal}>close</button>
       </div>
     </aside>
   )
