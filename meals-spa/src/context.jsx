@@ -60,7 +60,7 @@ const AppProvider = ({ children }) => {
                                             setSearchTerm, 
                                             fetchRandomMeal,
                                             showModal,
-                                            selectedMeal
+                                            selectMeal
                                         }
                                         }>
         {children}
