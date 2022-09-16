@@ -6,7 +6,7 @@ import StockOverviewPage from './pages/StockOverviewPage';
 
 function App() {
   return (
-    <div className="App">
+    <main className="container">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<StockOverviewPage />}>
@@ -14,7 +14,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
+    </main>
   );
 }
 
