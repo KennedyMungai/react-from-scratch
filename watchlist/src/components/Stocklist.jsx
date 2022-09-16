@@ -13,7 +13,7 @@ const Stocklist = () => {
                 const response = await finnHub.get("/quote?symbol=MSFT&token=cci686aad3ibcn4bhn2g");
                 console.log(response);
             } catch (err) {
-                
+                console.log(err.message);
             }
 
             fetchData();
