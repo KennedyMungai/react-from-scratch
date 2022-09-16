@@ -22,7 +22,7 @@ const AppProvider = ({ children }) => {
 
     useEffect(() => {
         fetchMeals(allMealsUrl);
-    }, []);
+    });
     
     
     return <AppContext.Provider value={{meals}}>
