@@ -70,6 +70,19 @@ const AppProvider = ({ children }) => {
         localStorage.setItem("favourites", JSON.stringify(updatedFavourites));
     };
 
+    const getFavouritesFromLocalStorage = () => {
+        let favourites = localStorage.getItem('favourites');
+
+        if(favourites) {
+            favourites = JSON.parse(localStorage.getItem('favourites'));
+        }
+        else {
+            favourites = []
+        }
+
+        return favourites;
+    };
+
     useEffect(() => {
         fetchMeals(allMealsUrl);
     }, []);
