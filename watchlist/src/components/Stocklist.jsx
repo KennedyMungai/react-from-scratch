@@ -19,9 +19,9 @@ const Stocklist = () => {
             } catch (err) {
                 console.log(err.message);
             }
-
-            fetchData();
         }
+
+        fetchData();
     }, []);
     
 
