@@ -83,7 +83,9 @@ const AppProvider = ({ children }) => {
                                             showModal,
                                             selectMeal,
                                             selectedMeal,
-                                            closeModal
+                                            closeModal,
+                                            addToFavourites,
+                                            removeFromFavourites
                                         }
                                         }>
         {children}
