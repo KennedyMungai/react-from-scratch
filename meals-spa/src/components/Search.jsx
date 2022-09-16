@@ -5,8 +5,12 @@ import { useGlobalContext } from '../context';
 const Search = () => {
   const [text, setText] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
     setText(e.target.value);
+  }
+
+  const handleSubmit = (e) => {
+    e.PreventDefault();
   }
 
   return (
