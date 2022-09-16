@@ -4,7 +4,13 @@ import { BsHandThumbsUp } from 'react-icons/bs';
 
 
 const Meals = () => {
-  const { meals, loading, selectMeal } = useGlobalContext();
+  const { 
+          meals, 
+          loading, 
+          selectMeal, 
+          addToFavourites, 
+          removeFromFavourites 
+        } = useGlobalContext();
 
   if(loading){
     return <section className='section'>
