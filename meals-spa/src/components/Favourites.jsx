@@ -3,7 +3,7 @@ import { useGlobalContext } from '../context';
 
 
 const Favourites = () => {
-  const { favourites } = useGlobalContext();
+  const { favourites, selectMeal, removeFromFavourites } = useGlobalContext();
 
   return (
     <div>Favourites</div>
