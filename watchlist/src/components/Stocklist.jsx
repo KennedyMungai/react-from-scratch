@@ -3,10 +3,10 @@ import finnHub from '../apis/finnHub';
 
 
 const Stocklist = () => {
+    const [stock, setStock] = useState([]);
     const [watchList, setWatchList] = useState([
         "GOOGL", "MSFT", "AMZN"
     ]);
-    const [stock, setStock] = useState([]);
 
     useEffect(() => {
         let isMounted = true;
@@ -48,54 +48,51 @@ const Stocklist = () => {
     
 
     return (
-        <div>Stocklist</div>
+        <div className="table-responsive">
+            <table className="table 
+            mt-5
+            table-striped
+            table-hover	
+            table-borderless
+            table-primary
+            align-middle">
+                <thead className="table-light">
+                    <caption>Stock List</caption>
+                    <tr>
+                        <th>Name</th>
+                        <th>Last</th>
+                        <th>Chg</th>
+                        <th>Chg%</th>
+                        <th>High</th>
+                        <th>Low</th>
+                        <th>Open</th>
+                        <th>Close</th>
+                    </tr>
+                    </thead>
+                    <tbody className="table-group-divider">
+                        {
+                            stock.map((stockData) => {
+                                return (
+                                    <tr className="table-primary" key={stockData.symbol} >
+                                        <th scope='row'>{stockData.symbol}</th>
+                                        <td>{stockData.data.c}</td>
+                                        <td>{stockData.data.d}</td>
+                                        <td>{stockData.data.dp}</td>
+                                        <td>{stockData.data.h}</td>
+                                        <td>{stockData.data.l}</td>
+                                        <td>{stockData.data.o}</td>
+                                        <td>{stockData.data.pc}</td>
+                                    </tr>
+                                )
+                            }
+                        )}
+                    </tbody>
+                    <tfoot>
+                        
+                    </tfoot>
+            </table>
+        </div>
     )
 }
 
-export default 
-    <div className="table-responsive">
-        <table className="table 
-        mt-5
-        table-striped
-        table-hover	
-        table-borderless
-        table-primary
-        align-middle">
-            <thead className="table-light">
-                <caption>Stock List</caption>
-                <tr>
-                    <th>Name</th>
-                    <th>Last</th>
-                    <th>Chg</th>
-                    <th>Chg%</th>
-                    <th>High</th>
-                    <th>Low</th>
-                    <th>Open</th>
-                    <th>Close</th>
-                </tr>
-                </thead>
-                <tbody className="table-group-divider">
-                    {
-                        stock.map((stockData) => {
-                            return (
-                                <tr className="table-primary" key={stockData.symbol} >
-                                    <th scope='row'>{stockData.symbol}</th>
-                                    <td>{stockData.data.c}</td>
-                                    <td>{stockData.data.d}</td>
-                                    <td>{stockData.data.dp}</td>
-                                    <td>{stockData.data.h}</td>
-                                    <td>{stockData.data.l}</td>
-                                    <td>{stockData.data.o}</td>
-                                    <td>{stockData.data.pc}</td>
-                                </tr>
-                            )
-                        }
-                    )}
-                </tbody>
-                <tfoot>
-                    
-                </tfoot>
-        </table>
-    </div>
-    
-;   
+export default Stocklist;   
