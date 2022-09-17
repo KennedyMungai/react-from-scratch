@@ -30,10 +30,11 @@ const Stocklist = () => {
                     }
                 });
                 
+                console.log(data);
+                
                 if(isMounted)
                 {
                     setStock(data);
-                    console.log(data);
                 }
             } catch (err) {
                 console.log(err.message);
