@@ -34,6 +34,9 @@ const Stocklist = () => {
                         symbol: "AMZN"
                     }
                 });
+
+                Promise.all();
+                
                 responses.push(response3);
 
                 if(isMounted)
