@@ -15,6 +15,7 @@ const Autocomplete = () => {
               className="form-control"
               autoComplete='off'
               value={search}
+              onChange={(e) => setSearch(e.target.value)}
               ></input>
           <label htmlFor='search'>Search</label>
           <ul className='dropdown-menu show'>
