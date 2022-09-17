@@ -75,16 +75,23 @@ export default
                 </tr>
                 </thead>
                 <tbody class="table-group-divider">
-                    <tr class="table-primary" >
-                        <td scope="row">Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                    </tr>
-                    <tr class="table-primary">
-                        <td scope="row">Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                    </tr>
+                    {
+                        stock.map(stockData) => {
+                            return {
+                            <tr class="table-primary" >
+                                <td>Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                            </tr>
+                            }
+                        }
+                    }
+                    
                 </tbody>
                 <tfoot>
                     
