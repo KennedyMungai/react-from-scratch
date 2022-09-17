@@ -6,6 +6,10 @@ const Autocomplete = () => {
   const [search, setSearch] = useState("");
   const [results, setResults] = useState([]);
 
+  const renderDropdown = () => {
+    
+  };
+
   useEffect(() => {
     let isMounted = true;
     const fetchData = async () => {
