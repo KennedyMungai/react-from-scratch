@@ -15,7 +15,7 @@ const Stocklist = () => {
             const responses = [];
             
             try {
-                Promise.all(
+                const promises = Promise.all(
                     finnHub.get("/quote", {
                         params: {
                             symbol: "MSFT"
