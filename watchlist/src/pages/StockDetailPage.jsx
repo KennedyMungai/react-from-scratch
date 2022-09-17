@@ -9,6 +9,8 @@ const StockDetailPage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      const date = new Date();
+
       const response = await finnHub.get("/stock/candle", {
         params: {
           symbol, 
