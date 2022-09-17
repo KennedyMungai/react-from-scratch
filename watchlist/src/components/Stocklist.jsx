@@ -8,6 +8,10 @@ const Stocklist = () => {
         "GOOGL", "MSFT", "AMZN"
     ]);
 
+    const changeColor = (change) => {
+        return change > 0 ? "success" : "danger";
+    }
+
     useEffect(() => {
         let isMounted = true;
 
@@ -76,7 +80,7 @@ const Stocklist = () => {
                                 return (
                                     <tr className="table-primary" key={stockData.symbol} >
                                         <th scope='row'>{stockData.symbol}</th>
-                                        <td className={`text-${changeColor(stock.data.c)}`}>{stockData.data.c}</td>
+                                        <td>{stockData.data.c}</td>
                                         <td className={`text-${changeColor(stock.data.d)}`}>{stockData.data.d}</td>
                                         <td>{stockData.data.dp}</td>
                                         <td>{stockData.data.h}</td>
