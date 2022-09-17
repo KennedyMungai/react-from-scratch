@@ -39,7 +39,7 @@ const StockDetailPage = () => {
           symbol, 
           from: oneWeek,
           to: currentTime,
-          resolution: 30
+          resolution: 60
         }
       })
       
