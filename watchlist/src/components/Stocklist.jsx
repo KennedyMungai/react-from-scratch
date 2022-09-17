@@ -52,7 +52,7 @@ const Stocklist = () => {
         fetchData();
 
         return () => (isMounted = false);
-    }, []);
+    }, [watchList]);
     
 
     return (
