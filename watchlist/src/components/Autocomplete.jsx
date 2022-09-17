@@ -24,7 +24,7 @@ const Autocomplete = () => {
               >
             {results.map((result) => {
               return (
-                <li className='dropdown-item' key={result.symbol}>{result.description} {result.symbol}</li>
+                <li className='dropdown-item' key={result.symbol} onClick={() => addStock(result.symbol)}>{result.description} {result.symbol}</li>
               )
             })}
           </ul> 
