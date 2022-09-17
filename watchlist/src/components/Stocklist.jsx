@@ -64,9 +64,12 @@ export default
             <thead class="table-light">
                 <caption>Stock List</caption>
                 <tr>
-                    <th>Column 1</th>
-                    <th>Column 2</th>
-                    <th>Column 3</th>
+                    <th>Name</th>
+                    <th>Last</th>
+                    <th>Chg</th>
+                    <th>Chg%</th>
+                    <th>High</th>
+                    <th>Low</th>
                 </tr>
                 </thead>
                 <tbody class="table-group-divider">
