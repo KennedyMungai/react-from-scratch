@@ -16,8 +16,6 @@ const Autocomplete = () => {
           }
         })
         
-          console.log(response);
-
           if(isMounted){
             setResults(response.data.results);
           }
