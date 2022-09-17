@@ -7,7 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Stocklist = () => {
     const [stock, setStock] = useState([]);
-    const { watchList } = useContext(WatchListContextProvider)
+    const { watchList } = useContext(WatchListContextProvider);
+    const navigate = useNavigate();
 
     const changeColor = (change) => {
         return change > 0 ? "success" : "danger";
