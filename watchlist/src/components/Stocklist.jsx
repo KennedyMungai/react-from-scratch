@@ -13,23 +13,7 @@ const Stocklist = () => {
 
         const fetchData = async () => {
             try {
-                const responses = Promise.all(
-                    finnHub.get("/quote", {
-                        params: {
-                            symbol: "MSFT"
-                        }
-                    }),
-                    finnHub.get("/quote", {
-                        params: {
-                            symbol: "GOOGL"
-                        }
-                    }),
-                    finnHub.get("/quote", {
-                        params: {
-                            symbol: "AMZN"
-                        }
-                    }
-                ));
+                const responses = Promise.all();
                 
                 if(isMounted)
                 {
