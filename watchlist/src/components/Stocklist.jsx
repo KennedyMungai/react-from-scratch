@@ -54,6 +54,9 @@ const Stocklist = () => {
         return () => (isMounted = false);
     }, [watchList]);
     
+    const handleStockSelect = () => {
+        
+    };
 
     return (
         <div className="table-responsive">
