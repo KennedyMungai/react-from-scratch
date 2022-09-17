@@ -70,6 +70,8 @@ export default
                     <th>Chg%</th>
                     <th>High</th>
                     <th>Low</th>
+                    <th>Open</th>
+                    <th>Close</th>
                 </tr>
                 </thead>
                 <tbody class="table-group-divider">
