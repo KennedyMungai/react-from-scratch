@@ -20,17 +20,21 @@ const Stocklist = () => {
                         symbol: "MSFT"
                     }
                 });
+                responses.push(response1);
+
                 const response2 = await finnHub.get("/quote", {
                     params: {
                         symbol: "GOOGL"
                     }
                 });
+                responses.push(response2);
+
                 const response3 = await finnHub.get("/quote", {
                     params: {
                         symbol: "AMZN"
                     }
                 });
-                console.log(response);
+                responses.push(response3);
 
                 if(isMounted)
                 {
