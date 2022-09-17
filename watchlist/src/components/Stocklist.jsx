@@ -76,7 +76,7 @@ export default
                 </thead>
                 <tbody className="table-group-divider">
                     {
-                        stock.map(stockData) => {
+                        stock.map((stockData) => {
                             return (
                                 <tr className="table-primary" key={stockData.symbol} >
                                     <th scope='row'>{stockData.symbol}</th>
@@ -90,7 +90,7 @@ export default
                                 </tr>
                             )
                         }
-                    }
+                    )}
                 </tbody>
                 <tfoot>
                     
