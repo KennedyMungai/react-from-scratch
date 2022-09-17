@@ -28,6 +28,8 @@ const Autocomplete = () => {
 
     if(search.length > 0) {
       fetchData();
+    } else {
+      setResults([]);
     }
 
     return () => (isMounted = false);
