@@ -60,7 +60,7 @@ const Autocomplete = () => {
               onChange={(e) => setSearch(e.target.value)}
               ></input>
           <label htmlFor='search'>Search</label>
-          renderDropDown();
+          {renderDropdown()}
       </div>
     </div>
   )
