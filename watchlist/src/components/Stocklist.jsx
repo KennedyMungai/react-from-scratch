@@ -15,45 +15,24 @@ const Stocklist = () => {
             const responses = [];
             
             try {
-                const response1 = await finnHub.get("/quote", {
-                    params: {
-                        symbol: "MSFT"
+                Promise.all(
+                    finnHub.get("/quote", {
+                        params: {
+                            symbol: "MSFT"
+                        }
+                    }),
+                    finnHub.get("/quote", {
+                        params: {
+                            symbol: "GOOGL"
+                        }
+                    }),
+                    finnHub.get("/quote", {
+                        params: {
+                            symbol: "AMZN"
+                        }
                     }
-                });
-                responses.push(response1);
-
-                const response2 = await finnHub.get("/quote", {
-                    params: {
-                        symbol: "GOOGL"
-                    }
-                });
-                responses.push(response2);
-
-                const response3 = await finnHub.get("/quote", {
-                    params: {
-                        symbol: "AMZN"
-                    }
-                });
-
-                Promise.all(finnHub.get("/quote", {
-                    params: {
-                        symbol: "MSFT"
-                    }
-                }),
-                finnHub.get("/quote", {
-                    params: {
-                        symbol: "GOOGL"
-                    }
-                }),
-                finnHub.get("/quote", {
-                    params: {
-                        symbol: "AMZN"
-                    }
-                }
-                );
+                ));
                 
-                responses.push(response3);
-
                 if(isMounted)
                 {
                     setStock(responses);
