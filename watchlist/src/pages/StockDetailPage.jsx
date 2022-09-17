@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 
 const StockDetailPage = () => {
-  const x = useParams();
+  const { symbol } = useParams();
 
   return (
     <div>StockDetailPage</div>
