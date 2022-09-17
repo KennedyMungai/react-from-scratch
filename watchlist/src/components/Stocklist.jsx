@@ -11,7 +11,11 @@ const Stocklist = () => {
 
     const changeColor = (change) => {
         return change > 0 ? "success" : "danger";
-    }
+    };
+
+    const renderIcon = (change) => {
+        return change > 0 ? <BsFillCaretUpFill /> : <BsFillCaretDownFill />
+    };
 
     useEffect(() => {
         let isMounted = true;
@@ -81,7 +85,7 @@ const Stocklist = () => {
                                     <tr className="table-primary" key={stockData.symbol} >
                                         <th scope='row'>{stockData.symbol}</th>
                                         <td>{stockData.data.c}</td>
-                                        <td className={`text-${changeColor(stockData.data.d)}`}>{stockData.data.d} {renderIcon(stockData.data.dp)</td>
+                                        <td className={`text-${changeColor(stockData.data.d)}`}>{stockData.data.d} {renderIcon(stockData.data.dp)}</td>
                                         <td className={`text-${changeColor(stockData.data.dp)}`}>{stockData.data.dp} {renderIcon(stockData.data.dp)} </td>
                                         <td>{stockData.data.h}</td>
                                         <td>{stockData.data.l}</td>
