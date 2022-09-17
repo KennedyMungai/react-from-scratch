@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 
 const Autocomplete = () => {
+  const [search, setSearch] = useState("");
+
   return (
     <div className='w-50 p-5 rounded mx-auto'>
       <div className='form-floating dropdown'>
