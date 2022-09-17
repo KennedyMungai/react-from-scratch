@@ -3,7 +3,7 @@ import React from 'react';
 
 const Autocomplete = () => {
   return (
-    <div>Autocomplete</div>
+    <div className='w-50 p-5 rounded mx-auto'>Autocomplete</div>
   )
 }
 
