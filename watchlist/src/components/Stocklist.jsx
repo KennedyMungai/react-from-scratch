@@ -86,15 +86,20 @@ const Stocklist = () => {
                         {
                             stock.map((stockData) => {
                                 return (
-                                    <tr className="table-primary" key={stockData.symbol} onClick={() => handleStockSelect(stockData.symbol)} >
-                                        <th scope='row'>{stockData.symbol}</th>
-                                        <td>{stockData.data.c}</td>
-                                        <td className={`text-${changeColor(stockData.data.d)}`}>{stockData.data.d} {renderIcon(stockData.data.dp)}</td>
-                                        <td className={`text-${changeColor(stockData.data.dp)}`}>{stockData.data.dp} {renderIcon(stockData.data.dp)} </td>
-                                        <td>{stockData.data.h}</td>
-                                        <td>{stockData.data.l}</td>
-                                        <td>{stockData.data.o}</td>
-                                        <td>{stockData.data.pc}</td>
+                                    <tr 
+                                        className="table-primary" 
+                                        key={stockData.symbol} 
+                                        onClick={() => handleStockSelect(stockData.symbol)} 
+                                        style={{cursor: "pointer"}}
+                                        >
+                                            <th scope='row'>{stockData.symbol}</th>
+                                            <td>{stockData.data.c}</td>
+                                            <td className={`text-${changeColor(stockData.data.d)}`}>{stockData.data.d} {renderIcon(stockData.data.dp)}</td>
+                                            <td className={`text-${changeColor(stockData.data.dp)}`}>{stockData.data.dp} {renderIcon(stockData.data.dp)} </td>
+                                            <td>{stockData.data.h}</td>
+                                            <td>{stockData.data.l}</td>
+                                            <td>{stockData.data.o}</td>
+                                            <td>{stockData.data.pc}</td>
                                     </tr>
                                 )
                             }
