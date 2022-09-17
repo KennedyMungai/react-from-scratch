@@ -17,9 +17,9 @@ const Autocomplete = () => {
         })
         
           console.log(response);
-          
+
           if(isMounted){
-            setResults(response.data);
+            setResults(response.data.results);
           }
       } catch (err) {
         console.log(err);
