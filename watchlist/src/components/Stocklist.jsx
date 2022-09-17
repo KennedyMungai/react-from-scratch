@@ -35,7 +35,22 @@ const Stocklist = () => {
                     }
                 });
 
-                Promise.all();
+                Promise.all(finnHub.get("/quote", {
+                    params: {
+                        symbol: "MSFT"
+                    }
+                }),
+                finnHub.get("/quote", {
+                    params: {
+                        symbol: "GOOGL"
+                    }
+                }),
+                finnHub.get("/quote", {
+                    params: {
+                        symbol: "AMZN"
+                    }
+                }
+                );
                 
                 responses.push(response3);
 
