@@ -53,15 +53,15 @@ const Stocklist = () => {
 }
 
 export default 
-    <div class="table-responsive">
-        <table class="table 
+    <div className="table-responsive">
+        <table className="table 
         mt-5
         table-striped
         table-hover	
         table-borderless
         table-primary
         align-middle">
-            <thead class="table-light">
+            <thead className="table-light">
                 <caption>Stock List</caption>
                 <tr>
                     <th>Name</th>
@@ -74,12 +74,12 @@ export default
                     <th>Close</th>
                 </tr>
                 </thead>
-                <tbody class="table-group-divider">
+                <tbody className="table-group-divider">
                     {
                         stock.map(stockData) => {
                             return {
-                            <tr class="table-primary" >
-                                <td>Item</td>
+                            <tr className="table-primary" >
+                                <td>{stockData.symbol}</td>
                                 <td>Item</td>
                                 <td>Item</td>
                                 <td>Item</td>
