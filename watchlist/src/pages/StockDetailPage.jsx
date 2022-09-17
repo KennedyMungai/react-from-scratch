@@ -18,6 +18,8 @@ const StockDetailPage = () => {
       }
       else if(date.getDay() === 0) {
         oneDay = currentTime - 3*24*6*6;
+      } else {
+        oneDay = currentTime - 24*60*60;
       }
       
       const response = await finnHub.get("/stock/candle", {
