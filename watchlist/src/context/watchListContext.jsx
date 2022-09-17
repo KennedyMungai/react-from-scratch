@@ -1,12 +1,12 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext } from 'react';
 
 
 export const WatchListContext = createContext();
 
-const watchListContext = () => {
+export const WatchListContextProvider = (props) => {
     return (
-        <div>watchListContext</div>
+        <WatchListContext.Provider></WatchListContext.Provider>
     )
 }
 
-export default watchListContext;
+export default WatchListContextProvider;
