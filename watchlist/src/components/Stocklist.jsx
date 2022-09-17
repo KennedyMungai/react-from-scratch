@@ -81,7 +81,7 @@ const Stocklist = () => {
                                         <th scope='row'>{stockData.symbol}</th>
                                         <td>{stockData.data.c}</td>
                                         <td className={`text-${changeColor(stockData.data.d)}`}>{stockData.data.d}</td>
-                                        <td>{stockData.data.dp}</td>
+                                        <td className={`text-${changeColor(stockData.data.dp)}`}>{stockData.data.dp}</td>
                                         <td>{stockData.data.h}</td>
                                         <td>{stockData.data.l}</td>
                                         <td>{stockData.data.o}</td>
