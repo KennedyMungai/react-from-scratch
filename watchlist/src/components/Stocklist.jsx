@@ -6,7 +6,7 @@ import { WatchListContextProvider } from '../context/watchListContext';
 
 const Stocklist = () => {
     const [stock, setStock] = useState([]);
-    useContext(WatchListContextProvider)
+    const value = useContext(WatchListContextProvider)
 
     const changeColor = (change) => {
         return change > 0 ? "success" : "danger";
