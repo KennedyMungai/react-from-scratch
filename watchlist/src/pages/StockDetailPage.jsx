@@ -16,8 +16,8 @@ const StockDetailPage = () => {
       const response = await finnHub.get("/stock/candle", {
         params: {
           symbol, 
-          from,
-          to,
+          from: oneDay,
+          to: currentTime,
           resolution
         }
       })
