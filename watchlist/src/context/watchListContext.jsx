@@ -7,8 +7,6 @@ export const WatchListContextProvider = (props) => {
     const [watchList, setWatchList] = useState(["GOOGL", "MSFT", "AMZN"]);
 
     return (
-        <WatchListContext.Provider value={watchList}></WatchListContext.Provider>
+        <WatchListContext.Provider value={{watchList}}></WatchListContext.Provider>
     )
 }
-
-export default WatchListContextProvider;
