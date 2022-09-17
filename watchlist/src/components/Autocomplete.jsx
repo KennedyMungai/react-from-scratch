@@ -13,6 +13,7 @@ const Autocomplete = () => {
               className="form-control"
               autoComplete='off'
               ></input>
+          <label htmlFor='search'>Search</label>
       </div>
     </div>
   )
