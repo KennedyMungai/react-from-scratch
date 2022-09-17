@@ -23,7 +23,7 @@ const Stocklist = () => {
                     })
                 );
 
-                responses.map((response) => {
+                const data = responses.map((response) => {
                     {
                         data: response.data,
                         symbol: response.config.params.symbol
