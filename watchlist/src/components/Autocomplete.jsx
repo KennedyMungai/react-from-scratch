@@ -14,6 +14,7 @@ const Autocomplete = () => {
               type="text" 
               className="form-control"
               autoComplete='off'
+              value={search}
               ></input>
           <label htmlFor='search'>Search</label>
           <ul className='dropdown-menu show'>
