@@ -15,17 +15,17 @@ const Stocklist = () => {
             const responses = [];
             
             try {
-                const response = await finnHub.get("/quote", {
+                const response1 = await finnHub.get("/quote", {
                     params: {
                         symbol: "MSFT"
                     }
                 });
-                const response = await finnHub.get("/quote", {
+                const response2 = await finnHub.get("/quote", {
                     params: {
                         symbol: "GOOGL"
                     }
                 });
-                const response = await finnHub.get("/quote", {
+                const response3 = await finnHub.get("/quote", {
                     params: {
                         symbol: "AMZN"
                     }
