@@ -18,7 +18,7 @@ const StockDetailPage = () => {
           symbol, 
           from: oneDay,
           to: currentTime,
-          resolution
+          resolution: 30
         }
       })
     }
