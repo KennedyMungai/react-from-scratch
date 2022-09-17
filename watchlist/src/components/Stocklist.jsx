@@ -76,8 +76,8 @@ const Stocklist = () => {
                                 return (
                                     <tr className="table-primary" key={stockData.symbol} >
                                         <th scope='row'>{stockData.symbol}</th>
-                                        <td className='text-'>{stockData.data.c}</td>
-                                        <td className='text-'>{stockData.data.d}</td>
+                                        <td className={`text-`}>{stockData.data.c}</td>
+                                        <td className={`text-`}>{stockData.data.d}</td>
                                         <td>{stockData.data.dp}</td>
                                         <td>{stockData.data.h}</td>
                                         <td>{stockData.data.l}</td>
