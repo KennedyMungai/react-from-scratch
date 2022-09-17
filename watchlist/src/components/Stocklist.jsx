@@ -58,10 +58,10 @@ const Stocklist = () => {
 
     return (
         <div className="table-responsive">
-            <table className="table 
+            <table className="
+            table
             mt-5
-            table-striped
-            table-bordered
+            table-borderles
             table-hover	
             table-primary
             align-middle">
