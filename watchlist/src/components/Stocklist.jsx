@@ -12,8 +12,6 @@ const Stocklist = () => {
         let isMounted = true;
 
         const fetchData = async () => {
-            const responses = [];
-            
             try {
                 const responses = Promise.all(
                     finnHub.get("/quote", {
