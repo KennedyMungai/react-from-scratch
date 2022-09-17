@@ -38,7 +38,7 @@ const Stocklist = () => {
 
                 if(isMounted)
                 {
-                    setStock(response.data);
+                    setStock(responses);
                 }
             } catch (err) {
                 console.log(err.message);
