@@ -79,19 +79,18 @@ export default
                         stock.map(stockData) => {
                             return (
                                 <tr className="table-primary" key={stockData.symbol} >
-                                    <th scope='row'>{stockData}.symbol</th>
-                                    <td>Item</td>
-                                    <td>Item</td>
-                                    <td>Item</td>
-                                    <td>Item</td>
-                                    <td>Item</td>
-                                    <td>Item</td>
-                                    <td>Item</td>
+                                    <th scope='row'>{stockData.symbol}</th>
+                                    <td>{stockData.data.c}</td>
+                                    <td>{stockData.data.d}</td>
+                                    <td>{stockData.data.dp}</td>
+                                    <td>{stockData.data.h}</td>
+                                    <td>{stockData.data.l}</td>
+                                    <td>{stockData.data.o}</td>
+                                    <td>{stockData.data.pc}</td>
                                 </tr>
                             )
                         }
                     }
-                    
                 </tbody>
                 <tfoot>
                     
