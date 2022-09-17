@@ -79,7 +79,7 @@ export default
                         stock.map(stockData) => {
                             return (
                                 <tr className="table-primary" key={stockData.symbol} >
-                                    <td>{stockData}.symbol</td>
+                                    <th scope='row'>{stockData}.symbol</th>
                                     <td>Item</td>
                                     <td>Item</td>
                                     <td>Item</td>
