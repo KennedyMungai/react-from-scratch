@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import finnHub from '../apis/finnHub';
+import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
 
 
 const Stocklist = () => {
