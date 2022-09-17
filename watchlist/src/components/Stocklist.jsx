@@ -24,7 +24,7 @@ const Stocklist = () => {
                 );
 
                 const data = responses.map((response) => {
-                    {
+                    return {
                         data: response.data,
                         symbol: response.config.params.symbol
                     }
