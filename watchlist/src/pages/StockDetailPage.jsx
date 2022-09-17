@@ -10,7 +10,7 @@ const StockDetailPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       const date = new Date();
-      const currentTime = date.getTime();
+      const currentTime = Math.floor(date.getTime() / 1000);
 
       const response = await finnHub.get("/stock/candle", {
         params: {
