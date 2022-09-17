@@ -7,7 +7,15 @@ const Autocomplete = () => {
   const [results, setResults] = useState([]);
 
   const renderDropdown = () => {
+    const dropDownClass = search ? "show": null;
 
+    return (
+          <ul className={`dropdown-menu ${dropDownClass}`}>
+            <li>stock1</li>
+            <li>stock2</li>
+            <li>stock3</li>
+          </ul> 
+    )
   };
 
   useEffect(() => {
