@@ -2,6 +2,7 @@ import React, {useState, useEffect, useContext} from 'react';
 import finnHub from '../apis/finnHub';
 import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
 import { WatchListContextProvider } from '../context/watchListContext';
+import { useNavigate } from 'react-router-dom';
 
 
 const Stocklist = () => {
@@ -55,7 +56,7 @@ const Stocklist = () => {
     }, [watchList]);
     
     const handleStockSelect = () => {
-        
+
     };
 
     return (
