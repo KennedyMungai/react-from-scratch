@@ -13,8 +13,10 @@ const Autocomplete = () => {
             q: search
           }
         })
-
-        console.log(response);
+        
+        if (search.length > 0) {
+          console.log(response);
+        }
       } catch (err) {
         console.log(err);
       }
