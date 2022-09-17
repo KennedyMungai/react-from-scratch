@@ -86,7 +86,7 @@ const Stocklist = () => {
                         {
                             stock.map((stockData) => {
                                 return (
-                                    <tr className="table-primary" key={stockData.symbol} onClick={() => handleStockSelect()} >
+                                    <tr className="table-primary" key={stockData.symbol} onClick={() => handleStockSelect(stockData.symbol)} >
                                         <th scope='row'>{stockData.symbol}</th>
                                         <td>{stockData.data.c}</td>
                                         <td className={`text-${changeColor(stockData.data.d)}`}>{stockData.data.d} {renderIcon(stockData.data.dp)}</td>
