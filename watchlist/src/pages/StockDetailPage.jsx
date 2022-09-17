@@ -48,7 +48,7 @@ const StockDetailPage = () => {
           symbol, 
           from: oneYear,
           to: currentTime,
-          resolution: 30
+          resolution: "W"
         }
       })
     }
