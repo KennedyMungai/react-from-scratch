@@ -56,8 +56,8 @@ const Stocklist = () => {
         return () => (isMounted = false);
     }, [watchList]);
     
-    const handleStockSelect = () => {
-
+    const handleStockSelect = (symbol) => {
+        navigate(`detail/${symbol}`);
     };
 
     return (
