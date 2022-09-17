@@ -58,7 +58,6 @@ const Stocklist = () => {
             table-striped
             table-bordered
             table-hover	
-            table-borderless
             table-primary
             align-middle">
                 <thead className="table-light">
