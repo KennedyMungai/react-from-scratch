@@ -39,9 +39,9 @@ const Stocklist = () => {
     }, []);
     
 
-  return (
-    <div>Stocklist</div>
-  )
+    return (
+        <div>Stocklist</div>
+    )
 }
 
 export default Stocklist;
