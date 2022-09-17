@@ -12,10 +12,22 @@ const Stocklist = () => {
         let isMounted = true;
 
         const fetchData = async () => {
+            const responses = [];
+            
             try {
                 const response = await finnHub.get("/quote", {
                     params: {
                         symbol: "MSFT"
+                    }
+                });
+                const response = await finnHub.get("/quote", {
+                    params: {
+                        symbol: "GOOGL"
+                    }
+                });
+                const response = await finnHub.get("/quote", {
+                    params: {
+                        symbol: "AMZN"
                     }
                 });
                 console.log(response);
