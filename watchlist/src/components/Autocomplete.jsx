@@ -14,7 +14,7 @@ const Autocomplete = () => {
               autoComplete='off'
               ></input>
           <label htmlFor='search'>Search</label>
-          <ul className='dropdown-menu'>
+          <ul className='dropdown-menu show'>
             <li>stock1</li>
             <li>stock2</li>
             <li>stock3</li>
