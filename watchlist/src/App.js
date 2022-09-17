@@ -8,13 +8,15 @@ import { WatchListContextProvider } from './context/watchListContext';
 function App() {
   return (
     <main className="container">
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<StockOverviewPage />}>
-          <Route path='/detail/:symbol' element={<StockDetailPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <WatchListContextProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<StockOverviewPage />}>
+            <Route path='/detail/:symbol' element={<StockDetailPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </WatchListContextProvider>
     </main>
   );
 }
