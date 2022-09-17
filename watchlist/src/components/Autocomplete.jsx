@@ -4,6 +4,7 @@ import finnHub from '../apis/finnHub';
 
 const Autocomplete = () => {
   const [search, setSearch] = useState("");
+  const [results, setResults] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
