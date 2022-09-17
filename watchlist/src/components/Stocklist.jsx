@@ -52,6 +52,7 @@ const Stocklist = () => {
             <table className="table 
             mt-5
             table-striped
+            table-bordered
             table-hover	
             table-borderless
             table-primary
