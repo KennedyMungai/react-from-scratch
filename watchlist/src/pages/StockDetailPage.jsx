@@ -11,8 +11,15 @@ const StockDetailPage = () => {
     const fetchData = async () => {
       const date = new Date();
       const currentTime = Math.floor(date.getTime() / 1000);
-      const oneDay = currentTime - 60*60*24;
+      let oneDay;
 
+      if(date.getDay() === 6) {
+        oneDay = currentTime - 2*24*60*60;
+      }
+      else if(date.getDay() === 0) {
+        oneDay = currentTime - 3*24*6*6;
+      }
+      
       const response = await finnHub.get("/stock/candle", {
         params: {
           symbol, 
