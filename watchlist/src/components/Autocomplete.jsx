@@ -26,7 +26,9 @@ const Autocomplete = () => {
       }
     }
 
-    fetchData();
+    if(search.length > 0) {
+      fetchData();
+    }
 
     return () => (isMounted = false);
   }, [search]);
