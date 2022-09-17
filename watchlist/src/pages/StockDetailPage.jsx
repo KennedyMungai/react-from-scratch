@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 
 
 const StockDetailPage = () => {
+  const x = useParams();
+
   return (
     <div>StockDetailPage</div>
   )
