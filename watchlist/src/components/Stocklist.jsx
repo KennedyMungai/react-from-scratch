@@ -24,8 +24,10 @@ const Stocklist = () => {
                 );
 
                 responses.map((response) => {
-                    data: response.data,
-                    symbol: response.config.params.symbol
+                    {
+                        data: response.data,
+                        symbol: response.config.params.symbol
+                    }
                 });
                 
                 if(isMounted)
