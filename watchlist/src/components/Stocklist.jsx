@@ -77,18 +77,18 @@ export default
                 <tbody className="table-group-divider">
                     {
                         stock.map(stockData) => {
-                            return {
-                            <tr className="table-primary" >
-                                <td>{stockData.symbol}</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                            </tr>
-                            }
+                            return (
+                                <tr className="table-primary" >
+                                    <td>{stockData.symbol}</td>
+                                    <td>Item</td>
+                                    <td>Item</td>
+                                    <td>Item</td>
+                                    <td>Item</td>
+                                    <td>Item</td>
+                                    <td>Item</td>
+                                    <td>Item</td>
+                                </tr>
+                            )
                         }
                     }
                     
