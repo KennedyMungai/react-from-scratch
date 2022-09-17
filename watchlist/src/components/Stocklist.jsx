@@ -13,7 +13,7 @@ const Stocklist = () => {
 
         const fetchData = async () => {
             try {
-                const responses = Promise.all(
+                const responses = await Promise.all(
                     watchList.map((stock) => {
                         return finnHub.get("/quote", {
                             params: {
