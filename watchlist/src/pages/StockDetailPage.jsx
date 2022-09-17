@@ -21,6 +21,9 @@ const StockDetailPage = () => {
       } else {
         oneDay = currentTime - 24*60*60;
       }
+
+      const oneWeek = currentTime - 7*24*60*60;
+      const oneYear = currentTime - 365*24*60*60;
       
       const response = await finnHub.get("/stock/candle", {
         params: {
