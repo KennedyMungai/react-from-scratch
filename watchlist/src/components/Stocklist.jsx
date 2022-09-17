@@ -5,9 +5,6 @@ import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
 
 const Stocklist = () => {
     const [stock, setStock] = useState([]);
-    const [watchList, setWatchList] = useState([
-        "GOOGL", "MSFT", "AMZN"
-    ]);
 
     const changeColor = (change) => {
         return change > 0 ? "success" : "danger";
