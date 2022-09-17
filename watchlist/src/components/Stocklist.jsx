@@ -6,7 +6,7 @@ const Stocklist = () => {
     const [watchList, setWatchList] = useState([
         "GOOGL", "MSFT", "AMZN"
     ]);
-    const [stock, setStock] = useState();
+    const [stock, setStock] = useState([]);
 
     useEffect(() => {
         let isMounted = true;
