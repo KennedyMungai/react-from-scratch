@@ -9,7 +9,14 @@ const StockDetailPage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-
+      const response = await finnHub.get("/stock/candle", {
+        params: {
+          symbol, 
+          from,
+          to,
+          resolution
+        }
+      })
     }
   }, [])
   
