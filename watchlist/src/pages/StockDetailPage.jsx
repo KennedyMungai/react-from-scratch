@@ -62,9 +62,9 @@ export const StockDetailPage = () => {
   }, []);
   
   setChartData({
-    day: formatData(),
-    week: formatData(),
-    year: formatData()
+    day: formatData(responses[0].data),
+    week: formatData(responses[1].data),
+    year: formatData(responses[2].data)
   });
 
   return (
