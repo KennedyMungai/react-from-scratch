@@ -18,6 +18,8 @@ const StockData = ({ symbol }) => {
                 console.log(error);
             }
         }
+
+        fetchData();
     }, [symbol])
     
 
