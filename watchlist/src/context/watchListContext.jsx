@@ -6,6 +6,11 @@ export const WatchListContext = createContext();
 export const WatchListContextProvider = (props) => {
     const [watchList, setWatchList] = useState(["GOOGL", "MSFT", "AMZN"]);
 
+    useEffect(() => {
+        localStorage.setItem("watchlist", watchList);
+    }, [watchList])
+    
+
     const addStock = (stock) => {
         if(watchList.indexOf(stock) === -1) {
             setWatchList([...watchList, stock]);
