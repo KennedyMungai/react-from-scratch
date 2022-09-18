@@ -15,12 +15,18 @@ const StockData = ({ symbol }) => {
                     }
                 });
                 console.log(response);
+                if (isMounted) {
+                    setStockData(response.data);
+                }
+
             } catch (error) {
                 console.log(error);
             }
         }
 
         fetchData();
+
+        return () => (isMounted = false);
     }, [symbol])
     
 
