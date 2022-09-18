@@ -50,7 +50,9 @@ const StockChart = ({ chartData , symbol}) => {
                 />
             </div>
             <div>
-                <button></button>
+                <button onClick={() => setDateFormat("24h")}>24h</button>
+                <button onClick={() => setDateFormat("7d")}>7d</button>
+                <button onClick={() => setDateFormat("1y")}>1y</button>
             </div>
         </>
     )
