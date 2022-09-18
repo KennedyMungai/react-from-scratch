@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StockChart = () => {
+const StockChart = ({ chartData }) => {
     return (
         <div>StockChart</div>
     )
