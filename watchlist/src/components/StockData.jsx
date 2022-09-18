@@ -4,6 +4,7 @@ import finnHub from '../apis/finnHub';
 
 const StockData = ({ symbol }) => {
     let isMounted = true;
+    const [stockData, setStockData] = useState();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -24,7 +25,9 @@ const StockData = ({ symbol }) => {
     
 
     return (
-        <div>StockData</div>
+        <div>
+
+        </div>
     )
 }
 
