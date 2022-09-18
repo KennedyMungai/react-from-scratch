@@ -6,6 +6,7 @@ import finnHub from '../apis/finnHub';
 
 export const StockDetailPage = () => {
   const { symbol } = useParams();
+  const [chartData, setChartData] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
