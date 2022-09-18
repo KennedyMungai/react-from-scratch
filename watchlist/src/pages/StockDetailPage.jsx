@@ -66,14 +66,3 @@ export const StockDetailPage = () => {
     <div>StockDetailPage</div>
   )
 }
-
-const data = [
-  {
-    x: t,
-    y: c
-  },
-  {
-    x: t,
-    y: c
-  }
-];
