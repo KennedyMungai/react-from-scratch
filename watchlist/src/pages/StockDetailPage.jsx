@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import finnHub from '../apis/finnHub';
 
 
-const StockDetailPage = () => {
+export const StockDetailPage = () => {
   const { symbol } = useParams();
 
   useEffect(() => {
@@ -67,4 +67,3 @@ const StockDetailPage = () => {
   )
 }
 
-export default StockDetailPage;
