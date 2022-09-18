@@ -51,7 +51,7 @@ const StockChart = ({ chartData , symbol}) => {
                 return year;
                 break;
             default:
-                break;
+                return day;
         }
     };
 
