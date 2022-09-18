@@ -88,7 +88,7 @@ export const StockDetailPage = () => {
         ) }
       </div>
       <div>
-        <StockData />
+        <StockData symbol={symbol} />
       </div>
     </>
   )
