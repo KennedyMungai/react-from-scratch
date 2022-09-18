@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StockData = () => {
+const StockData = ({ symbol }) => {
     return (
         <div>StockData</div>
     )
