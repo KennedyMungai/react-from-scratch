@@ -61,7 +61,7 @@ const StockChart = ({ chartData , symbol}) => {
         if (button === dateFormat) {
             return classes + " btn-primary";
         } else {
-            return classes + " btn-ouline-primary"
+            return classes + " btn-outline-primary"
         }
     };
 
