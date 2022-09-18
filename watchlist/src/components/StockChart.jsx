@@ -25,9 +25,14 @@ const StockChart = ({ chartData , symbol}) => {
         }
     };
 
+    const series = [{
+        name: symbol,
+        data: day
+    }]
+
     return (
         <div>
-
+            
         </div>
     )
 }
