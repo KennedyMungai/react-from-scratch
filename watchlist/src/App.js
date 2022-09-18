@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import StockDetailPage from './pages/StockDetailPage';
+import {StockDetailPage} from './pages/StockDetailPage';
 import StockOverviewPage from './pages/StockOverviewPage';
 import { WatchListContextProvider } from './context/watchListContext';
 
