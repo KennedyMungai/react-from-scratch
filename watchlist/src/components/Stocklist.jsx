@@ -87,7 +87,7 @@ const Stocklist = () => {
                             stock.map((stockData) => {
                                 return (
                                     <tr 
-                                        className="table-primary" 
+                                        className="table-row" 
                                         key={stockData.symbol} 
                                         onClick={() => handleStockSelect(stockData.symbol)} 
                                         style={{cursor: "pointer"}}
