@@ -103,7 +103,8 @@ const Stocklist = () => {
                                                 {stockData.data.pc} 
                                                 <button 
                                                         className='btn btn-danger btn-sm ml-3 d-inline-block delete-button'
-                                                        onClick={() => {
+                                                        onClick={(e) => {
+                                                            e.stopPropagation()
                                                             deleteStock(stockData.symbol)
                                                         }}
                                                 >
