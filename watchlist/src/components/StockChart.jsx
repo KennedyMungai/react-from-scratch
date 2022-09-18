@@ -76,9 +76,9 @@ const StockChart = ({ chartData , symbol}) => {
                 />
             </div>
             <div>
-                <button className='btn btn-outline-primary' onClick={() => setDateFormat("24h")}>24h</button>
-                <button className='btn btn-outline-primary' onClick={() => setDateFormat("7d")}>7d</button>
-                <button className='btn btn-outline-primary' onClick={() => setDateFormat("1y")}>1y</button>
+                <button className={renderButtonSelect("24h")} onClick={() => setDateFormat("24h")}>24h</button>
+                <button className={renderButtonSelect("7d")} onClick={() => setDateFormat("7d")}>7d</button>
+                <button className={renderButtonSelect("1y")} onClick={() => setDateFormat("1y")}>1y</button>
             </div>
         </>
     )
