@@ -67,3 +67,13 @@ export const StockDetailPage = () => {
   )
 }
 
+const data = [
+  {
+    x: t,
+    y: c
+  },
+  {
+    x: t,
+    y: c
+  }
+];
