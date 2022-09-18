@@ -31,7 +31,7 @@ const StockChart = ({ chartData , symbol}) => {
     }]
 
     return (
-        <div>
+        <div className="mt-5 p-4 shadow-sm bg-white"> 
             
         </div>
     )
