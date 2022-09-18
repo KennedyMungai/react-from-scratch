@@ -26,11 +26,11 @@ const StockChart = ({ chartData , symbol}) => {
                 datetimeUTC: false
             }
         },
-        tooltip: [
+        tooltip: {
             x: {
                 format: "MMM dd HH:MM"
             }
-        ]
+        }
     };
 
     const series = [{
