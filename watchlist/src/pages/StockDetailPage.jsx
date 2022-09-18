@@ -82,7 +82,7 @@ export const StockDetailPage = () => {
   return (
     <div>
       { chartData && (
-        <StockChart />
+        <StockChart chartData={chartData} />
       ) }
     </div>
   )
