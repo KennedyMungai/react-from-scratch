@@ -62,20 +62,21 @@ export const StockDetailPage = () => {
             }
           })
         ]);
+
+        setChartData({
+          day: formatData(responses[0].data),
+          week: formatData(responses[1].data),
+          year: formatData(responses[2].data)
+        });
       } catch (error) {
         console.log(error);
       }
-      
     }
 
     fetchData();
   }, []);
   
-  setChartData({
-    day: formatData(responses[0].data),
-    week: formatData(responses[1].data),
-    year: formatData(responses[2].data)
-  });
+  
 
   return (
     <div>StockDetailPage</div>
