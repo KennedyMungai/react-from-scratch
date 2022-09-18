@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Chart from 'react-apexcharts';
 
 
 const StockChart = ({ chartData , symbol}) => {
     const {day, week, year} = chartData;
+    const [dateFormat, setDateFormat] = useState("24h");
 
     const options = {
         title: {
@@ -39,14 +40,19 @@ const StockChart = ({ chartData , symbol}) => {
     }]
 
     return (
-        <div className="mt-5 p-4 shadow-sm bg-white"> 
-            <Chart 
-                options={options}
-                series={series}
-                type="area"
-                width="100%"
-            />
-        </div>
+        <>
+            <div className="mt-5 p-4 shadow-sm bg-white"> 
+                <Chart 
+                    options={options}
+                    series={series}
+                    type="area"
+                    width="100%"
+                />
+            </div>
+            <div>
+                <button></button>
+            </div>
+        </>
     )
 }
 
