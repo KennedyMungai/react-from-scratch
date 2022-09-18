@@ -7,7 +7,7 @@ export const WatchListContextProvider = (props) => {
     const [watchList, setWatchList] = useState(["GOOGL", "MSFT", "AMZN"]);
 
     useEffect(() => {
-        localStorage.setItem("watchlist", watchList);
+        localStorage.setItem("watchList", watchList);
     }, [watchList])
     
 
