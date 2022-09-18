@@ -55,6 +55,16 @@ const StockChart = ({ chartData , symbol}) => {
         }
     };
 
+    const renderButtonSelect = (button) => {
+        const classes = "btn m-1";
+
+        if (button === dateFormat) {
+            return classes + " btn-primary";
+        } else {
+            return classes + " btn-ouline-primary"
+        }
+    };
+
     return (
         <>
             <div className="mt-5 p-4 shadow-sm bg-white"> 
@@ -66,9 +76,9 @@ const StockChart = ({ chartData , symbol}) => {
                 />
             </div>
             <div>
-                <button onClick={() => setDateFormat("24h")}>24h</button>
-                <button onClick={() => setDateFormat("7d")}>7d</button>
-                <button onClick={() => setDateFormat("1y")}>1y</button>
+                <button className='btn btn-outline-primary' onClick={() => setDateFormat("24h")}>24h</button>
+                <button className='btn btn-outline-primary' onClick={() => setDateFormat("7d")}>7d</button>
+                <button className='btn btn-outline-primary' onClick={() => setDateFormat("1y")}>1y</button>
             </div>
         </>
     )
