@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Stocklist = () => {
     const [stock, setStock] = useState([]);
-    const { watchList } = useContext(WatchListContextProvider);
+    const { watchList, deleteStock } = useContext(WatchListContextProvider);
     const navigate = useNavigate();
 
     const changeColor = (change) => {
@@ -99,7 +99,17 @@ const Stocklist = () => {
                                             <td>{stockData.data.h}</td>
                                             <td>{stockData.data.l}</td>
                                             <td>{stockData.data.o}</td>
-                                            <td>{stockData.data.pc} <button className='btn btn-danger btn-sm ml-3 d-inline-block delete-button'>Remove</button></td>
+                                            <td>
+                                                {stockData.data.pc} 
+                                                <button 
+                                                        className='btn btn-danger btn-sm ml-3 d-inline-block delete-button'
+                                                        onClick={() => {
+                                                            deleteStock(stockData.symbol)
+                                                        }}
+                                                >
+                                                    Remove
+                                                </button>
+                                            </td>
                                     </tr>
                                 )
                             }
