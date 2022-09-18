@@ -99,7 +99,7 @@ const Stocklist = () => {
                                             <td>{stockData.data.h}</td>
                                             <td>{stockData.data.l}</td>
                                             <td>{stockData.data.o}</td>
-                                            <td>{stockData.data.pc}</td>
+                                            <td>{stockData.data.pc} <button className='btn btn-danger btn-sm ml-3 d-inline-block delete-button'>Remove</button></td>
                                     </tr>
                                 )
                             }
